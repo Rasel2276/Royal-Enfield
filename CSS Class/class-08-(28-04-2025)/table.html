@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            height: 100%;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 70px auto 70px;
+            gap: 10px;
+        }
+
+        .header{
+            grid-column: 2/-1;
+            background-color:  #FC427B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            color: white;
+        }
+        .footer{
+            grid-column: 1/-1;
+            background-color: #FC427B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            color: white;
+        }
+       .content{
+        grid-column: 2/-1;
+        background-color:  #FC427B;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            color: white;
+       } 
+       .sidebar{
+        grid-row: 1/3;
+        background-color:  #FC427B;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+       }
+       .sidebar a{
+        padding: 10px 0px;
+        text-decoration: none;
+        color: white;
+        font-size: larger;
+       }
+       .sidebar a:hover{
+        background-color: #2C3A47;
+       }
+       .box{
+        height: 350px;
+        width: 350px;
+        background-color: aliceblue;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 8px 30px #00000070;
+       }
+       .box:hover{
+        transform: scale(1.1);
+        transition: .5s;
+       }
+       .box img{
+        width: 100%;
+        height: 70%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+       }
+       .box p{
+        color: black;
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+        text-align: center;
+
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Well come to our websit!</div>
+        <div class="sidebar">
+            <h1>SIDEBAR</h1>
+            <a href="#">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">Service</a>
+            <a href="#">About</a>
+        </div>
+        <div class="content">
+            <div class="box">
+                <img src="pic.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis animi cupiditate rem hic molestiae voluptates
+                    id quaerat praesentium nam molestias.</p>
+            </div>
+            <div class="box">
+                <img src="pic.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis animi cupiditate rem hic molestiae voluptates
+                    id quaerat praesentium nam molestias.</p>
+            </div>
+            <div class="box">
+                <img src="pic.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis animi cupiditate rem hic molestiae voluptates
+                    id quaerat praesentium nam molestias.</p>
+            </div>
+            <div class="box">
+                <img src="pic.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis animi cupiditate rem hic molestiae voluptates
+                    id quaerat praesentium nam molestias.</p>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+  
+</body>
+</html>

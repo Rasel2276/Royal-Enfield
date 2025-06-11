@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            color: white;
+            font-size: x-large;
+            text-align: center;
+        }
+     .container{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        gap: 3px;
+        grid-template-columns: repeat(14,1fr);
+        grid-template-rows: 50px 1fr 200px 200px 50px;
+        grid-template-areas: 
+        "h h h h h h h h h h h h h h"
+        "m m c c c c c c c c c c c c"
+        "m m b1 b1 b1 b1 b1 b1 b2 b2 b2 b2 b2 b2"
+        "m m b3 b3 b3 b4 b4 b4 b5 b5 b5 b6 b6 b6"
+        "f f f f f f f f f f f f f f "
+        ;
+        }
+        .header{
+            grid-area: h;
+            background-color: blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu{
+            grid-area: m;
+            background-color: blueviolet;
+        }
+        .maincontent{
+            grid-area: c;
+            background-color: aqua;
+        }
+        .box1{
+            grid-area: b1;
+            background-color: black;
+        }
+        .box2{
+            grid-area: b2;
+            background-color: rgb(38, 182, 38);
+        }
+        .box3{
+            grid-area: b3;
+            background-color: brown;
+        }
+        .box4{
+            grid-area: b4;
+            background-color: blueviolet;
+        }
+        .box5{
+            grid-area: b5;
+            background-color: bisque;
+        }
+        .box6{
+            grid-area: b6;
+            background-color: aquamarine;
+        }
+        .footer{
+            grid-area: f;
+            background-color: black;
+        }
+        nav ul{
+           list-style: none; 
+        }
+        nav li{
+            display: inline-block;
+        }
+        nav li a{
+            text-decoration: none;
+            padding: 12px 15px;
+           
+
+        }
+        nav li a:hover{
+            background-color: #e84118;
+        }
+        .menu ul{
+            list-style: none;
+        }
+        .menu li a{
+            padding-top: 10px;
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="evidence.html">About Us</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text">
+                <button>search</button>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Search Book</a></li>
+                <li><a href="">Upload Book</a></li>
+                <li><a href="">The News</a></li>
+                <li><a href="">User Registration</a></li>
+            </ul>
+
+        </div>
+        <div class="maincontent">MAINCONTENT</div>
+        <div class="box1">BOX1</div>
+        <div class="box2">BOX1</div>
+        <div class="box3">BOX1</div>
+        <div class="box4">BOX1</div>
+        <div class="box5">BOX1</div>
+        <div class="box6">BOX1</div>
+        <div class="footer">FOOTER</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td{
+            border-collapse: collapse;
+            border: 1px solid black;
+            width: 50%;
+            height: 10%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        tr:hover{
+            background-color: #EAB543;
+        }
+        td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th style="padding-left:20px ; padding-right:20px ; padding-bottom: 15px;">Name</th>
+            <th rowspan="3">Result</th>
+            <th style="padding-left:20px ; padding-right:20px ; padding-bottom: 15px;">ID</th>
+            <th style="padding-left:40px ; padding-right:40px ; padding-bottom: 15px;">Class</th>
+            <th style="padding-left:30px ; padding-right:30px ; padding-bottom: 15px;">Marks</th>
+        </tr>
+        <tr>
+            <td>Tanvir</td>
+            <td rowspan="2"></td>
+            <td>X</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Tanvir</td>
+            <td>X</td>
+            <td>80</td>
+        </tr>
+    </table>
+</body>
+</html>

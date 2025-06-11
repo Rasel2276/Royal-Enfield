@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* ----------------top menu css start-------------------------- */
+        .logo img{
+            width: 50px;
+            margin-left: 10px;
+            margin-top: 3px;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            background-color: #1e3799;
+            align-items: center;
+        }
+        nav li{
+            display: inline-block;
+            /* margin-right: 15px; */
+        }
+        nav ul{
+            list-style: none;
+            
+        }
+        nav li a{
+            color: white;
+            text-decoration: none;
+            font-size: large;
+            /* transition: .5s; */
+            padding: 19px 10px;
+        }
+        nav li a:hover{
+            background-color: #eb2f06;
+        }
+        .search{
+            margin-right:10px ;
+        }
+        /* ----------------top menu css end-------------------------- */
+
+        /* ----------------side menu css start---------------------------------------- */
+        .sidebar{
+            background-color: #eb2f06;
+            width: 200px;
+            height: 100vh;
+            /* text-align: center; */
+            position: fixed;
+        }
+        .sidebar ul{
+            list-style: none;
+            /* margin-left: 15px; */
+        }
+        .sidebar li a{
+            /* margin-top: 15px; */
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: large; 
+            
+            padding: 15px 35px;
+        }
+        .sidebar li a:hover{
+            background-color: #2f3542;
+        }
+        .main-content{
+            position: fixed;
+            left: 200px;
+            height: 100vh;
+            width: 100%;
+            background-color: #a4b0be;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text">
+            <button>search</button>
+        </div>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Search Book</a></li>
+            <li><a href="">Upload Book</a></li>
+            <li><a href="">The News</a></li>
+            <li><a href="">User Registration</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="content1"></div>
+        <div class="content2"></div>
+        <div class="content3"></div>
+    </div>
+</body>
+</html>

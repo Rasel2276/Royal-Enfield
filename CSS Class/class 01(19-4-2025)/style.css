@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.dive{
+    background-color: beige;
+    height: 800px;
+}
+.div1{
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 0.5px solid beige;
+    border-radius: 5px;  
+}
+.div2{
+    padding: 5px;
+    font-size: 15px;
+    color: brown;
+    text-align: center;
+}
+.div3{
+    padding: 10px;
+    text-align:left;
+    color: rgb(207, 63, 63);
+}
+.div1:hover{
+    background-color: rgb(174, 211, 42);
+}

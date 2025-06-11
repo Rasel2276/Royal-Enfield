@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid brown;
+            min-height: 1000px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        body{
+            background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 45%, rgba(192, 214, 98, 1) 100%, rgba(237, 221, 83, 1) 100%);
+        }
+        .box-1{
+            width: 400px;
+            height: 400px;
+            background-color: blueviolet;
+            margin:20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            border: 1px solid brown;
+            box-shadow: 0px 8px 30px #00000070;
+        }
+        .box-2{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(35, 231, 17);
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom-left-radius:250px;
+            font-size: 50px;
+            border: 1px solid brown;
+            box-shadow: 0px 8px 30px #00000070;
+            
+        }
+        .box-3{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(223, 17, 17);
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius:250px ;
+            font-size: 50px;
+            border: 1px solid brown;
+            box-shadow: 0px 8px 30px #00000070;
+        }
+        .box-4{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(233, 236, 7);
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            font-size: 50px;
+            border: 1px solid brown;
+            box-shadow: 0px 8px 30px #00000070;
+        }
+        .box-1:hover{
+            transform: scale(1.1);
+        }
+        .box-2:hover{
+            transform: scale(1.1);
+        }
+        .box-3:hover{
+            transform: scale(1.1);
+        }
+        .box-4:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">one</div>
+        <div class="box-2">two</div>
+        <div class="box-3">three</div>
+        <div class="box-4">four</div>
+    </div>
+</body>
+</html>
